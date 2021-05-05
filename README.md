@@ -1,0 +1,1 @@
+*animation created by setTimeout, amazing
