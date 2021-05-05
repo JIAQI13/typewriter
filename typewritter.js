@@ -1,7 +1,8 @@
 const sentence = "hello there from lighthouse labs";
-setTimeout(() => {
-    // print the char here
-    for (const char of sentence) {
+let i =10;
+for (const char of sentence) {
+    setTimeout(() => {
+        // print the char here
         process.stdout.write(char);
-      }
-  }, 1000) // <= 1s delay to make it noticeable. Can dial it down later.
+      }, (i+=50)) // <= 1s delay to make it noticeable. Can dial it down later.
+  }
